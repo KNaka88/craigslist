@@ -1,12 +1,2 @@
-<div *ngFor='let ad of craigsLists'>
-  <div class="panel">
-    <div class="panel panel-header">
-      {{ad.category}} {{ad.region}} {{ad.title}}
-    </div>
-
-    <div class="panel panel-body">
-      {{ad.detail}} {{ad.price}} 
-    </div>
-
-  </div>
-</div>
+<h3>Categories</h3>
+<p *ngFor='let category of categories' (click)='routeByCategory(category)'>{{category}}</p>

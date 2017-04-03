@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { routing } from './app.routing';
+import { CategoryComponent } from './category/category.component';
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

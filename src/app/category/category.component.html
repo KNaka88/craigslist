@@ -1,0 +1,12 @@
+<div *ngFor='let ad of thisCraigsList'>
+  <div class="panel">
+    <div class="panel panel-header">
+      {{ad.category}} {{ad.region}} {{ad.title}}
+    </div>
+
+    <div class="panel panel-body">
+      {{ad.detail}} {{ad.price}}
+    </div>
+
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CraigsList } from '../craigslist.model';
+import { Router } from '@angular/router';
 import { CraigslistService } from '../craigslist.service';
 
 
@@ -12,11 +13,18 @@ import { CraigslistService } from '../craigslist.service';
 
 export class IndexComponent implements OnInit {
   craigsLists: CraigsList[];
+  categories: string[];
 
-  constructor(private craigsListService: CraigslistService) {}
+  constructor(private router: Router, private craigsListService: CraigslistService) {}
 
   ngOnInit() {
     this.craigsLists = this.craigsListService.getCraigsLists();
+
+    this.categories = this.craigsListService.getCraigsListsCategories();
+  }
+
+  routeByCategory(category: string) {
+    this.router.navigate(['category', category]);
   }
 
 }
