@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { routing } from './app.routing';
 import { CategoryComponent } from './category/category.component';
+import { OneAdComponent } from './one-ad/one-ad.component';
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    CategoryComponent
+    CategoryComponent,
+    OneAdComponent
   ],
   imports: [
     BrowserModule,

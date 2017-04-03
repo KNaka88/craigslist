@@ -1,4 +1,4 @@
-<div *ngFor='let ad of thisCraigsList'>
+<div *ngFor='let ad of thisCraigsList' (click)='goToDetailPage(ad)'>
   <div class="panel">
     <div class="panel panel-header">
       {{ad.category}} {{ad.region}} {{ad.title}}
